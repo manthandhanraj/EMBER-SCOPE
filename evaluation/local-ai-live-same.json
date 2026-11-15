@@ -1,0 +1,77 @@
+{
+  "historicalStatus": "Development response before the qualifier-preservation guard; not the final evaluation. Earlier checked flags do not establish scientific correctness. Use delivery-acceptance.json for the final run.",
+  "response": {
+    "evidence": [
+      {
+        "key": "F:same-smoke-size-mass",
+        "kind": "finding",
+        "title": "Reported observation (same-results)",
+        "text": "\"Consequently, although the AMD for silicone rubber is 227 nm, almost half the particle mass is larger than 1000 nm.\" (source: same-results, PDF page 2) (SAME: spacecraft-material smoke; mechanistic evidence only, not solid-material behaviour) Curator source-scope annotations: This quotation is from the original SAME results on PDF page 2; SAME-R starts on PDF page 4. AMD means arithmetic mean diameter, not median diameter. Almost half refers to particle mass, not particle count. No run-level detector-performance dataset has been imported here; this does not mean the source or wider literature lacks detector results.",
+        "href": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be#page=2",
+        "family": "same",
+        "rung": "mechanistic",
+        "gravity": "microgravity"
+      },
+      {
+        "key": "P:PSI-102:table",
+        "kind": "finding",
+        "title": "PSI-102 — imported PSI source table",
+        "href": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+        "rung": "context",
+        "text": "IMPORTED SOURCE TABLE, NOT A VALIDATED PERFORMANCE DATASET. Smoke and Aerosol Measurement Experiment; PSI-102_Experimental table_SAME.csv; DOI 10.60555/gd4k-8h62; 8 source rows. Row count is not a count of independent tests or detector-performance labels. Original column headers: Sample #; Sample Material; Air Flow (cm/s); Weight loss rate (mg/min); Aging Duration (minutes). Original cells, including unknowns and censored values, remain in the downloadable table. No missing physical values or outcome labels have been inferred. Source: https://psi.nasa.gov/physci/repo/data/investigations/PSI-102."
+      },
+      {
+        "key": "I:same",
+        "kind": "finding",
+        "title": "SAME / SAME-R — investigation overview (not test results)",
+        "text": "OVERVIEW / OBJECTIVES ONLY. Characterize spacecraft-material smoke and assess smoke-detector response in reduced gravity. Materials: Smoke generated from spacecraft materials; the overview lists Teflon, Kapton, cellulose and silicone rubber. Hardware: Smoke-generation, aerosol measurement and detector-test apparatus; configurations need the original investigation documentation. Measurements: Aerosol number, size and mass-related measurements, plus ionization and photoelectric detector evaluation. NASA reports material-dependent smoke-size distributions; these aggregate results are not individual detector-performance records. Limits: No numerical SAME detector-performance time series are curated here. The NASA document includes aggregate smoke-property results; source-table smoke-generation conditions do not establish alarm sensitivity, false-alarm rate or timing for a chosen habitat. Source: NASA SAME / SAME-R document, PDF pages 1–2 and reflight section.",
+        "href": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+        "rung": "context"
+      }
+    ],
+    "outside": [
+      "Investigation overviews describe objectives and scope only. They are not measured test results or detector-performance data.",
+      "Summarize only SAME / SAME-R. Retrieved items are a bounded subset, not the entire investigation. The original NASA document includes results as well as objectives. Aggregate publication findings are kept separate from individual test rows and detector validation. SAME-R has its own profile. Its modified hardware and materials are not assumed equivalent to the original SAME configuration. PSI source-table metadata remains separate from curated solid-fuel outcome rows. Smoke generation settings do not become detector response or alarm-performance measurements."
+    ],
+    "mode": "ai",
+    "provider": "ollama:qwen2.5:3b-instruct",
+    "summary": "OBSERVED: The arithmetic mean diameter (AMD) for silicone rubber is 227 nm, with half the particle mass being larger than 1000 nm. DATA_GAP: No numerical detector-performance time series are curated for the SAME investigation.",
+    "claims": [
+      {
+        "text": "OBSERVED: The arithmetic mean diameter (AMD) for silicone rubber is 227 nm, with half the particle mass being larger than 1000 nm.",
+        "type": "OBSERVED",
+        "cites": [
+          "F:same-smoke-size-mass"
+        ],
+        "verified": true,
+        "issues": []
+      },
+      {
+        "text": "DATA_GAP: No numerical detector-performance time series are curated for the SAME investigation.",
+        "type": "DATA_GAP",
+        "cites": [],
+        "verified": true,
+        "issues": []
+      },
+      {
+        "text": "INTERPRETATION: The recorded smoke particle size distribution does not directly indicate detector performance.",
+        "type": "INTERPRETATION",
+        "cites": [
+          "I:same",
+          "F:same-smoke-size-mass"
+        ],
+        "verified": true,
+        "issues": []
+      },
+      {
+        "text": "DATA_GAP: The PSI-102 experimental table does not contain detector-performance validation data.",
+        "type": "DATA_GAP",
+        "cites": [
+          "P:PSI-102:table"
+        ],
+        "verified": true,
+        "issues": []
+      }
+    ]
+  }
+}

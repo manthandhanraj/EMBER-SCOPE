@@ -1,0 +1,1 @@
+question_id,question,goal,environment,held_out,returned_studies,ranking_relevance,missing_relevant_studies,claim_text,claim_type,cited_source,cited_page,supported,number_error,unit_error,gravity_context_error,unsupported_interpretation,reviewer,review_date,notes,disagreement,adjudication

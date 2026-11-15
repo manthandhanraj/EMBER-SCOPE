@@ -1,0 +1,226 @@
+[
+  {
+    "id": "fine-water-mist",
+    "title": "Fine water mist and orientation-independent discharge",
+    "goal": "suppression",
+    "application": "both",
+    "investigationIds": [],
+    "evidenceType": "reported-technology",
+    "summary": "A NASA technical brief reports a proof-of-concept water-mist design that extinguished open and baffled-enclosure fires and discharged in different orientations.",
+    "designImplication": "Research extinguisher access, enclosure penetration, recharge resources and compatibility with breathing protection together.",
+    "limitations": [
+      "The cited equipment result is not a PSI solid-fuel test row or a universal extinguishment guarantee.",
+      "Agent dose, droplet distribution, enclosure, ventilation, fuel and electrical compatibility need application-specific qualification."
+    ],
+    "sources": [
+      {
+        "title": "NASA Tech Brief: Fine-Water-Mist Multiple-Orientation-Discharge Fire Extinguisher",
+        "url": "https://ntrs.nasa.gov/citations/20100001376",
+        "locator": "Abstract: proof-of-concept result and possible spacecraft/aircraft/vehicle uses"
+      },
+      {
+        "title": "Two New Pieces of Emergency Response Equipment for Use in Confined Space Environments",
+        "url": "https://ntrs.nasa.gov/citations/20110015892",
+        "locator": "Respirator/extinguisher compatibility and potential submarine application"
+      }
+    ],
+    "checked": "2026-11-15"
+  },
+  {
+    "id": "smoke-detector-spectrum",
+    "title": "Smoke-property coverage for advanced detection",
+    "goal": "detection",
+    "application": "both",
+    "investigationIds": [
+      "same",
+      "same-r"
+    ],
+    "evidenceType": "publication-finding",
+    "summary": "SAME reports material-dependent smoke distributions; a single average particle size can hide a substantial larger-particle mass fraction.",
+    "designImplication": "Build a detector validation matrix across aerosol size, material, airflow and aging, including representative pre-fire heating products.",
+    "limitations": [
+      "Smoke-property findings do not establish detector sensitivity, false-alarm rate or alarm time for a particular habitat.",
+      "NASA describes possible use in submarines and underwater laboratories; this is an application prospect, not a deployment claim."
+    ],
+    "sources": [
+      {
+        "title": "NASA SAME / SAME-R investigation document",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+        "locator": "PDF pages 2 and 4: smoke results, Earth applications and reflight methods"
+      }
+    ],
+    "checked": "2026-11-15"
+  },
+  {
+    "id": "materials-screening",
+    "title": "Material screening across atmospheres and gravity",
+    "goal": "prevention",
+    "application": "both",
+    "investigationIds": [
+      "bass2",
+      "luci",
+      "sofie",
+      "fm2"
+    ],
+    "evidenceType": "research-objective",
+    "summary": "NASA combustion studies connect material selection with oxygen, ventilation, geometry and gravity rather than treating flammability as a material-only label.",
+    "designImplication": "Export exact material, shape, thickness, oxygen, pressure and flow metadata before comparing test outcomes or training a model.",
+    "limitations": [
+      "Small-sample or simulated-gravity findings do not certify a full cabin or Moon-surface installation.",
+      "An unmeasured condition combination remains a research gap even when its individual variables appear in separate tests."
+    ],
+    "sources": [
+      {
+        "title": "BASS-II Summary Report",
+        "url": "https://ntrs.nasa.gov/citations/20210011385",
+        "locator": "Abstract and test matrices: material, atmosphere, ventilation and geometry"
+      },
+      {
+        "title": "NASA FM² objectives and hardware",
+        "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+        "locator": "Objectives: bridge Earth material screening and reduced-gravity behavior"
+      }
+    ],
+    "checked": "2026-11-15"
+  },
+  {
+    "id": "cool-flame-diagnostics",
+    "title": "Diagnostics beyond visible flame disappearance",
+    "goal": "detection",
+    "application": "both",
+    "investigationIds": [
+      "flex",
+      "flex2",
+      "cfi",
+      "cfi-g"
+    ],
+    "evidenceType": "publication-finding",
+    "summary": "NASA reports cool-flame observations after hot-flame quenching; CFI-G uses faint-emission imaging and thermal information to investigate low-temperature chemistry.",
+    "designImplication": "Separate visual observations from heat-release or chemical-state measurements when defining a research endpoint or model target.",
+    "limitations": [
+      "Cool-flame observations are configuration-specific and are not a detector-selection or crew-response procedure.",
+      "Engine efficiency and emissions are research applications; an optimized terrestrial device is not delivered by this dashboard."
+    ],
+    "sources": [
+      {
+        "title": "NASA: Cool Flames Created During a First for ISS Research",
+        "url": "https://www.nasa.gov/missions/station/cool-flames-created-during-a-first-for-international-space-station-research/",
+        "locator": "2021 CFI-G observations and diagnostic discussion"
+      },
+      {
+        "title": "NASA ACME presentation",
+        "url": "https://ntrs.nasa.gov/citations/20220007191",
+        "locator": "Slide 6: CFI-G selected finding and formaldehyde-filter imaging"
+      }
+    ],
+    "checked": "2026-11-15"
+  },
+  {
+    "id": "electric-flame-control",
+    "title": "Electric fields for cleaner terrestrial combustion",
+    "goal": "prevention",
+    "application": "earth",
+    "investigationIds": [
+      "efield",
+      "acme"
+    ],
+    "evidenceType": "research-objective",
+    "summary": "E-FIELD Flames investigates ion-driven flow, stability and soot control for efficient, lower-emission combustion.",
+    "designImplication": "Compare field strength, ion current and flame response as research variables rather than treating electrical forcing as a ready fire extinguisher.",
+    "limitations": [
+      "NASA explicitly states this experiment is not conducted to serve a space application.",
+      "No spacecraft suppression performance or electrical hardware qualification is inferred."
+    ],
+    "sources": [
+      {
+        "title": "NASA Science E-FIELD Flames",
+        "url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+        "locator": "Science Objectives, Space Applications and Earth Applications"
+      }
+    ],
+    "checked": "2026-11-15"
+  },
+  {
+    "id": "soot-stability-models",
+    "title": "Soot and stabilization models for practical burners",
+    "goal": "prevention",
+    "application": "earth",
+    "investigationIds": [
+      "spice",
+      "slice"
+    ],
+    "evidenceType": "research-objective",
+    "summary": "SPICE studies smoke-point behavior; SLICE studies flame attachment and liftoff to support combustion-model development.",
+    "designImplication": "Keep fuel, nozzle, coflow and flame-state fields available so researchers can compare relevant configurations and model targets.",
+    "limitations": [
+      "Shared hardware does not make the SPICE smoke point and SLICE liftoff threshold the same outcome.",
+      "Combustor-model relevance does not establish solid-material or smoke-detector performance."
+    ],
+    "sources": [
+      {
+        "title": "NASA SPICE investigation description",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf",
+        "locator": "Research Overview and Science Objectives"
+      },
+      {
+        "title": "NASA SLICE investigation description",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+        "locator": "PDF pages 1–2: objectives and experiment/model comparison"
+      }
+    ],
+    "checked": "2026-11-15"
+  },
+  {
+    "id": "cabin-scale-integration",
+    "title": "From sample tests to cabin-scale fire monitoring",
+    "goal": "detection",
+    "application": "spacecraft",
+    "investigationIds": [
+      "saffire",
+      "bass2",
+      "same"
+    ],
+    "evidenceType": "research-objective",
+    "summary": "Saffire provides a larger-spacecraft research setting that complements small samples and smoke-measurement investigations.",
+    "designImplication": "Compare temperature, combustion-product sensing, ventilation and confinement before transferring a laboratory finding to a vehicle-level monitoring study.",
+    "limitations": [
+      "Saffire flights have different configurations; a result from one is not a controlled replicate of another.",
+      "The dashboard informs equipment research and data collection, not installation approval or emergency response."
+    ],
+    "sources": [
+      {
+        "title": "Preliminary Results from Saffire VI",
+        "url": "https://ntrs.nasa.gov/citations/20240002981",
+        "locator": "Abstract: spacecraft-scale fire, temperature and gas-product research"
+      },
+      {
+        "title": "NASA: Studying Combustion and Fire Safety",
+        "url": "https://www.nasa.gov/missions/station/studying-combustion-and-fire-safety/",
+        "locator": "Saffire, material selection, growth and fire-safety context"
+      }
+    ],
+    "checked": "2026-11-15"
+  },
+  {
+    "id": "firefighter-protection",
+    "title": "NASA technology heritage in firefighter protection",
+    "goal": "prevention",
+    "application": "earth",
+    "investigationIds": [],
+    "evidenceType": "reported-technology",
+    "summary": "NASA documents lightweight breathing-apparatus technology transfer and earlier flame-resistant protective-material development for firefighting.",
+    "designImplication": "Use this as a documented technology-transfer example; assess modern protective-equipment requirements with the relevant current engineering evidence.",
+    "limitations": [
+      "This broader NASA safety heritage is not represented as a result of BASS, FLEX, SAME or another PSI campaign.",
+      "Historical documentation does not establish the current certification or suitability of any product."
+    ],
+    "sources": [
+      {
+        "title": "NASA facts: Astronaut flight suits fighting fires on Earth",
+        "url": "https://www.nasa.gov/wp-content/uploads/2019/08/466723main_nasafacts_508c.pdf",
+        "locator": "Firefighter protective-material and lightweight breathing-system technology-transfer section"
+      }
+    ],
+    "checked": "2026-11-15"
+  }
+]

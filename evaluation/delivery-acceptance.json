@@ -1,0 +1,363 @@
+{
+  "checkedAt": "2026-11-15T05:10:48.571965+00:00",
+  "base": "http://127.0.0.1:3002",
+  "checks": [
+    {
+      "check": "production-pages-and-security-headers",
+      "passed": true,
+      "routes": 18
+    },
+    {
+      "check": "curated-profile-pages-and-summary-exports",
+      "passed": true,
+      "profiles": 15
+    },
+    {
+      "check": "real-psi-table-fidelity-and-downloads",
+      "passed": true,
+      "entries": 24,
+      "tables": 22,
+      "sourceRows": 2009,
+      "modelReadyRows": 607
+    },
+    {
+      "check": "model-target-exports-and-group-separation",
+      "passed": true,
+      "catalog": 78,
+      "ignition": 41,
+      "spread": 4
+    },
+    {
+      "check": "live-neural-ranking-and-distinct-habitat-priorities",
+      "passed": true,
+      "model": "all-minilm",
+      "habitats": 3
+    },
+    {
+      "check": "invalid-inputs-and-scoped-no-model-retrieval",
+      "passed": true
+    },
+    {
+      "check": "live-grounded-ai-smoke-cases",
+      "passed": true,
+      "cases": 2,
+      "note": "Developer smoke cases; automatic checks are not semantic/expert validation."
+    }
+  ],
+  "liveAi": [
+    {
+      "investigation": "same",
+      "question": "Quote the original SAME silicone-rubber smoke-size finding exactly, then identify the detector-validation gap in this corpus.",
+      "response": {
+        "evidence": [
+          {
+            "key": "F:same-smoke-size-mass",
+            "kind": "finding",
+            "title": "Reported observation (same-results)",
+            "text": "\"Consequently, although the AMD for silicone rubber is 227 nm, almost half the particle mass is larger than 1000 nm.\" (source: same-results, PDF page 2) (SAME: spacecraft-material smoke; mechanistic evidence only, not solid-material behaviour) Curator source-scope annotations: This quotation is from the original SAME results on PDF page 2; SAME-R starts on PDF page 4. AMD means arithmetic mean diameter, not median diameter. Almost half refers to particle mass, not particle count. No run-level detector-performance dataset has been imported here; this does not mean the source or wider literature lacks detector results.",
+            "href": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be#page=2",
+            "family": "same",
+            "rung": "mechanistic",
+            "gravity": "microgravity"
+          },
+          {
+            "key": "P:PSI-102:table",
+            "kind": "finding",
+            "title": "PSI-102 — imported PSI source table",
+            "href": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+            "rung": "context",
+            "text": "IMPORTED SOURCE TABLE, NOT A VALIDATED PERFORMANCE DATASET. Smoke and Aerosol Measurement Experiment; PSI-102_Experimental table_SAME.csv; DOI 10.60555/gd4k-8h62; 8 source rows. Row count is not a count of independent tests or detector-performance labels. Original column headers: Sample #; Sample Material; Air Flow (cm/s); Weight loss rate (mg/min); Aging Duration (minutes). Original cells, including unknowns and censored values, remain in the downloadable table. No missing physical values or outcome labels have been inferred. Source: https://psi.nasa.gov/physci/repo/data/investigations/PSI-102."
+          },
+          {
+            "key": "I:same",
+            "kind": "finding",
+            "title": "SAME / SAME-R — investigation overview (not test results)",
+            "text": "OVERVIEW / OBJECTIVES ONLY. Characterize spacecraft-material smoke and assess smoke-detector response in reduced gravity. Materials: Smoke generated from spacecraft materials; the overview lists Teflon, Kapton, cellulose and silicone rubber. Hardware: Smoke-generation, aerosol measurement and detector-test apparatus; configurations need the original investigation documentation. Measurements: Aerosol number, size and mass-related measurements, plus ionization and photoelectric detector evaluation. NASA reports material-dependent smoke-size distributions; these aggregate results are not individual detector-performance records. Limits: No numerical SAME detector-performance time series are curated here. The NASA document includes aggregate smoke-property results; source-table smoke-generation conditions do not establish alarm sensitivity, false-alarm rate or timing for a chosen habitat. Source: NASA SAME / SAME-R document, PDF pages 1–2 and reflight section.",
+            "href": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+            "rung": "context"
+          }
+        ],
+        "outside": [
+          "No test record used rubber.",
+          "Investigation overviews describe objectives and scope only. They are not measured test results or detector-performance data.",
+          "Summarize only SAME / SAME-R. Retrieved items are a bounded subset, not the entire investigation. The original NASA document includes results as well as objectives. Aggregate publication findings are kept separate from individual test rows and detector validation. SAME-R has its own profile. Its modified hardware and materials are not assumed equivalent to the original SAME configuration. PSI source-table metadata remains separate from curated solid-fuel outcome rows. Smoke generation settings do not become detector response or alarm-performance measurements."
+        ],
+        "mode": "ai",
+        "provider": "ollama:qwen2.5:7b-instruct",
+        "summary": "Consequently, although the AMD for silicone rubber is 227 nm, almost half the particle mass is larger than 1000 nm. No run-level detector-performance dataset has been imported in this corpus.",
+        "claims": [
+          {
+            "text": "Consequently, although the AMD for silicone rubber is 227 nm, almost half the particle mass is larger than 1000 nm.",
+            "type": "OBSERVED",
+            "cites": [
+              "F:same-smoke-size-mass"
+            ],
+            "verified": true,
+            "issues": []
+          },
+          {
+            "text": "No run-level detector-performance dataset has been imported in this corpus.",
+            "type": "DATA_GAP",
+            "cites": [],
+            "verified": true,
+            "issues": []
+          }
+        ]
+      }
+    },
+    {
+      "investigation": "bass2",
+      "question": "Summarize the BASS-II low-airflow findings. Identify limits before applying them to a lunar habitat; do not predict safety.",
+      "response": {
+        "evidence": [
+          {
+            "key": "F:dim-blue-low-flow",
+            "kind": "finding",
+            "title": "Reported observation (bass-thickness)",
+            "text": "\"At the lowest speeds examined (less than 1 cm/s) all the flames tended to become dim blue and very stable. However, heat loss at these very low convective rates is small so the flames can burn for a long time.\" (source: bass-thickness, PDF page 54) Campaign annotation: this publication concerns original BASS. Do not relabel it as a BASS-II measurement; the two are grouped for discovery only.",
+            "href": "https://ntrs.nasa.gov/api/citations/20140011099/downloads/20140011099.pdf#page=54",
+            "family": "bass2",
+            "rung": "analogous",
+            "gravity": "microgravity"
+          },
+          {
+            "key": "F:flames-survive-below-1",
+            "kind": "finding",
+            "title": "Reported observation (bass2-summary)",
+            "text": "\"Flames survived at airflow less than 1 cm/s.\" (source: bass2-summary, PDF page 74)",
+            "href": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf#page=74",
+            "family": "bass2",
+            "rung": "analogous",
+            "gravity": "microgravity"
+          },
+          {
+            "key": "F:low-flow-sensitivity",
+            "kind": "finding",
+            "title": "Reported observation (bass-thickness)",
+            "text": "\"Microgravity flames were found to be especially sensitive to air flow speed in the range 0 to 5 cm/s.\" (source: bass-thickness, PDF page 54) Campaign annotation: this publication concerns original BASS. Do not relabel it as a BASS-II measurement; the two are grouped for discovery only.",
+            "href": "https://ntrs.nasa.gov/api/citations/20140011099/downloads/20140011099.pdf#page=54",
+            "family": "bass2",
+            "rung": "analogous",
+            "gravity": "microgravity"
+          },
+          {
+            "key": "F:sibal-10-duration",
+            "kind": "finding",
+            "title": "Reported observation (bass2-summary)",
+            "text": "\"The whole combustion process took about 40 s.\" (source: bass2-summary, PDF page 103)",
+            "href": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf#page=103",
+            "family": "bass2",
+            "rung": "analogous",
+            "gravity": "microgravity"
+          },
+          {
+            "key": "F:sibal-10-vs-5",
+            "kind": "finding",
+            "title": "Reported observation (bass2-summary)",
+            "text": "\"Compared with the 10-cm/s case, the 5-cm/s case has a shorter flame and spreads more slowly.\" (source: bass2-summary, PDF page 103)",
+            "href": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf#page=103",
+            "family": "bass2",
+            "rung": "analogous",
+            "gravity": "microgravity"
+          },
+          {
+            "key": "F:sibal-5-duration",
+            "kind": "finding",
+            "title": "Reported observation (bass2-summary)",
+            "text": "\"Because the flow speed is lower, it took more than 60 s to burn the whole sample.\" (source: bass2-summary, PDF page 103)",
+            "href": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf#page=103",
+            "family": "bass2",
+            "rung": "analogous",
+            "gravity": "microgravity"
+          },
+          {
+            "key": "F:sibal-quench-speeds",
+            "kind": "finding",
+            "title": "Reported observation (sibal-concurrent)",
+            "text": "\"The quenching speeds were found to be between 1 and 5 cm/s with higher speed in lower oxygen atmosphere.\" (source: sibal-concurrent, abstract)",
+            "href": "https://ntrs.nasa.gov/citations/20150008962",
+            "family": "bass2",
+            "rung": "analogous",
+            "gravity": "microgravity"
+          },
+          {
+            "key": "F:sibal-spread-trends",
+            "kind": "finding",
+            "title": "Reported observation (bass2-summary)",
+            "text": "\"Flames spread more slowly across the narrower samples, at lower flow velocities and at lower O2 percentages.\" (source: bass2-summary, PDF page 103)",
+            "href": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf#page=103",
+            "family": "bass2",
+            "rung": "analogous",
+            "gravity": "microgravity"
+          },
+          {
+            "key": "E:bass2-B1",
+            "kind": "test",
+            "title": "BASS-II test B1",
+            "text": "BASS-II test B1; material 100-µm PMMA film, 2 cm wide; opposed flow; oxygen 20.6 %; airflow as recorded \"5\" (cm/s; \"pot\" values are fan settings); thickness 0.1 mm; width 20 mm; outcome: Extinguished after flow was turned off (coded by MicroFire Atlas from NASA's notes); NASA notes: \"Ignited very quickly, turned flow off after spread halfway; flame extinguished very quickly; and sooty with blue leading edge\"; source: bass2-summary Table A.1, PDF page 111; run in microgravity aboard the ISS",
+            "href": "/experiments/bass2-B1",
+            "family": "bass2",
+            "gravity": "microgravity",
+            "rung": "analogous"
+          },
+          {
+            "key": "E:bass2-B10",
+            "kind": "test",
+            "title": "BASS-II test B10",
+            "text": "BASS-II test B10; material 1-cm, 0.2-mm PMMA film; opposed flow; oxygen 20.1 %; airflow as recorded \"5, 4, 3, 2, 1\" (cm/s; \"pot\" values are fan settings); thickness 0.2 mm; width 10 mm; outcome: Quenched as flow was reduced (coded by MicroFire Atlas from NASA's notes); NASA notes: \"Multiple velocities for steady spread, extinguished at pot 0.35\"; source: bass2-summary Table A.1, PDF page 111; run in microgravity aboard the ISS",
+            "href": "/experiments/bass2-B10",
+            "family": "bass2",
+            "gravity": "microgravity",
+            "rung": "analogous"
+          },
+          {
+            "key": "E:bass2-B11",
+            "kind": "test",
+            "title": "BASS-II test B11",
+            "text": "BASS-II test B11; material 2-cm, 0.2-mm PMMA film; opposed flow; oxygen 20.1 %; airflow as recorded \"5, 3, 1, <1\" (cm/s; \"pot\" values are fan settings); thickness 0.2 mm; width 20 mm; outcome: Quenched as flow was reduced (coded by MicroFire Atlas from NASA's notes); NASA notes: \"Multiple velocities for steady spread, extinguished at pot 0.35\"; source: bass2-summary Table A.1, PDF page 111; run in microgravity aboard the ISS",
+            "href": "/experiments/bass2-B11",
+            "family": "bass2",
+            "gravity": "microgravity",
+            "rung": "analogous"
+          },
+          {
+            "key": "E:bass2-B12",
+            "kind": "test",
+            "title": "BASS-II test B12",
+            "text": "BASS-II test B12; material 300-µm film, 2 cm wide; opposed flow; oxygen 20.5 %; airflow as recorded \"2\" (cm/s; \"pot\" values are fan settings); thickness 0.3 mm; width 20 mm; outcome: Burned; final outcome not stated in table (coded by MicroFire Atlas from NASA's notes); NASA notes: \"Mostly blue, soot only on bottom\"; source: bass2-summary Table A.1, PDF page 111; run in microgravity aboard the ISS",
+            "href": "/experiments/bass2-B12",
+            "family": "bass2",
+            "gravity": "microgravity",
+            "rung": "analogous"
+          },
+          {
+            "key": "E:bass2-B13",
+            "kind": "test",
+            "title": "BASS-II test B13",
+            "text": "BASS-II test B13; material 2-cm, 0.4-mm thick film; opposed flow; oxygen 20.1 %; airflow as recorded \"10, 5, 4, 3, 2, 1\" (cm/s; \"pot\" values are fan settings); thickness 0.4 mm; width 20 mm; outcome: Quenched as flow was reduced (coded by MicroFire Atlas from NASA's notes); NASA notes: \"Multiple velocities for steady spread, extinguished at pot 0.35\"; source: bass2-summary Table A.1, PDF page 111; run in microgravity aboard the ISS",
+            "href": "/experiments/bass2-B13",
+            "family": "bass2",
+            "gravity": "microgravity",
+            "rung": "analogous"
+          },
+          {
+            "key": "E:bass2-B14",
+            "kind": "test",
+            "title": "BASS-II test B14",
+            "text": "BASS-II test B14; material 1-cm-wide, 200-µm-thick PMMA; opposed flow; oxygen 14.1 %; airflow as recorded \"5, 3, 2, extinction\" (cm/s; \"pot\" values are fan settings); thickness 0.2 mm; width 10 mm; outcome: Ignited briefly, no sustained flame (coded by MicroFire Atlas from NASA's notes); NASA notes: \"HCl O, only brief ignition, flame extinguished\"; source: bass2-summary Table A.1, PDF page 111; run in microgravity aboard the ISS",
+            "href": "/experiments/bass2-B14",
+            "family": "bass2",
+            "gravity": "microgravity",
+            "rung": "analogous"
+          },
+          {
+            "key": "E:bass2-B15",
+            "kind": "test",
+            "title": "BASS-II test B15",
+            "text": "BASS-II test B15; material 2-cm, 0.1-mm PMMA film; opposed flow; oxygen 20.1 %; airflow as recorded \"10, max\" (cm/s; \"pot\" values are fan settings); thickness 0.1 mm; width 20 mm; outcome: Kept burning at high flow (no blowoff) (coded by MicroFire Atlas from NASA's notes); NASA notes: \"Spread at 10 cm/s, did not blowoff\"; source: bass2-summary Table A.1, PDF page 111; run in microgravity aboard the ISS",
+            "href": "/experiments/bass2-B15",
+            "family": "bass2",
+            "gravity": "microgravity",
+            "rung": "analogous"
+          },
+          {
+            "key": "E:bass2-B16",
+            "kind": "test",
+            "title": "BASS-II test B16",
+            "text": "BASS-II test B16; material 2-cm 100-µm-thick PMMA; opposed flow; oxygen 16.5 %; airflow as recorded \"3, 5 pot, 0.4 pot\" (cm/s; \"pot\" values are fan settings); thickness 0.1 mm; width 20 mm; outcome: Quenched as flow was reduced (coded by MicroFire Atlas from NASA's notes); NASA notes: \"HCl 1.1 > 1.3; flame quenched after prolonged burn at 0.4 pot, one-sided flame; spread to top side and quenched immediately; did igniter wire affect top flame?\"; source: bass2-summary Table A.1, PDF page 111; run in microgravity aboard the ISS",
+            "href": "/experiments/bass2-B16",
+            "family": "bass2",
+            "gravity": "microgravity",
+            "rung": "analogous"
+          },
+          {
+            "key": "E:bass2-B17",
+            "kind": "test",
+            "title": "BASS-II test B17",
+            "text": "BASS-II test B17; material 1-cm-wide, 200-µm-thick PMMA; opposed flow; oxygen 16.6 %; airflow as recorded \"5, 3, pot 0.4\" (cm/s; \"pot\" values are fan settings); thickness 0.2 mm; width 10 mm; outcome: Quenched as flow was reduced (coded by MicroFire Atlas from NASA's notes); NASA notes: \"Burned steadily at higher flows, extinguished just as we reached a pot of 0.4; vapor jetting more on bottom, possibly because of sample tilted slightly to flow?\"; source: bass2-summary Table A.1, PDF page 111; run in microgravity aboard the ISS",
+            "href": "/experiments/bass2-B17",
+            "family": "bass2",
+            "gravity": "microgravity",
+            "rung": "analogous"
+          },
+          {
+            "key": "E:bass2-B18",
+            "kind": "test",
+            "title": "BASS-II test B18",
+            "text": "BASS-II test B18; material 1-cm-wide, 200-µm-thick PMMA; opposed flow; oxygen 16.5 %; airflow as recorded \"10, blowoff\" (cm/s; \"pot\" values are fan settings); thickness 0.2 mm; width 10 mm; outcome: Blew off at high flow (coded by MicroFire Atlas from NASA's notes); NASA notes: \"HCl 0.6 > 0.9, flame blew out at a fan pot of 7.0\"; source: bass2-summary Table A.1, PDF page 112; run in microgravity aboard the ISS",
+            "href": "/experiments/bass2-B18",
+            "family": "bass2",
+            "gravity": "microgravity",
+            "rung": "analogous"
+          },
+          {
+            "key": "P:PSI-25:table",
+            "kind": "finding",
+            "title": "PSI-25 — imported PSI source table",
+            "href": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+            "rung": "context",
+            "text": "IMPORTED SOURCE TABLE, NOT A VALIDATED PERFORMANCE DATASET. Burning and Suppression of Solids - II; PSI-25_Experimental table_BASS-II.csv; DOI 10.60555/4qc4-de67; 129 source rows. Row count is not a count of independent tests or detector-performance labels. Original column headers: PI; Test #; Date; GMT; Sample #; Fuel Sample Material; Flow restrictor; Fan display; Air display; Radiometer gain   (1000   250   50   10); Total Frames Shot; Calibrated  initial O2 % by vol; Calibrated final O2 % by vol; Initial CO2 % by vol; Final CO2 % by vol; Initial CO (ppm); Final CO (ppm). Original cells, including unknowns and censored values, remain in the downloadable table. No missing physical values or outcome labels have been inferred. Source: https://psi.nasa.gov/physci/repo/data/investigations/PSI-25."
+          },
+          {
+            "key": "I:bass2",
+            "kind": "finding",
+            "title": "BASS / BASS-II — investigation overview (not test results)",
+            "text": "OVERVIEW / OBJECTIVES ONLY. Investigate solid-fuel ignition, spread and extinction under controlled low-speed flow. Materials: Plastic films, rods and composite fabric; exact materials and sizes are test-specific. Hardware: BASS-II flow duct in the ISS Microgravity Science Glovebox; video camera with data overlay and a 35-mm still camera. Apparatus details are campaign-specific. Measurements: For BASS-II, CSA-CP provided oxygen and carbon monoxide readings; a Carbon Dioxide Monitor measured carbon dioxide before and after tests. The report describes comparison with ISS Major Constituents Analyzer oxygen readings. Limits: Small samples and a specific duct do not establish whole-cabin behavior. Measurements and sensors are not interchangeable across tests. Source: BASS-II Summary Report, apparatus and test matrices.",
+            "href": "https://ntrs.nasa.gov/citations/20210011385",
+            "rung": "context"
+          }
+        ],
+        "outside": [
+          "No test record in this atlas burned at lunar gravity. Short partial-gravity tests exist as reported findings, not test rows.",
+          "MicroFire Atlas reports NASA evidence; these records do not establish mission safety, fire probability, predictions or isolated causal proof.",
+          "Investigation overviews describe objectives and scope only. They are not measured test results or detector-performance data.",
+          "Summarize only BASS / BASS-II. Retrieved items are a bounded subset, not the entire investigation. BASS and BASS-II are grouped for discovery. The sensor description above is specifically supported by the BASS-II report; it is not a universal specification for all BASS campaigns."
+        ],
+        "mode": "ai",
+        "provider": "ollama:qwen2.5:7b-instruct",
+        "summary": "At airflow speeds less than 1 cm/s, flames tended to become dim blue and very stable, burning for a long time. Flames survived at airflow less than 1 cm/s.",
+        "claims": [
+          {
+            "text": "At airflow speeds less than 1 cm/s, flames tended to become dim blue and very stable, burning for a long time.",
+            "type": "INTERPRETATION",
+            "cites": [
+              "F:dim-blue-low-flow"
+            ],
+            "verified": true,
+            "issues": []
+          },
+          {
+            "text": "Flames survived at airflow less than 1 cm/s.",
+            "type": "OBSERVED",
+            "cites": [
+              "F:flames-survive-below-1"
+            ],
+            "verified": true,
+            "issues": []
+          },
+          {
+            "text": "At 5 cm/s airflow, flames spread more slowly and burned longer than at 10 cm/s.",
+            "type": "INTERPRETATION",
+            "cites": [
+              "F:sibal-10-vs-5",
+              "F:sibal-10-duration",
+              "F:sibal-10-duration"
+            ],
+            "verified": true,
+            "issues": []
+          },
+          {
+            "text": "Quenching speeds were between 1 and 5 cm/s, with higher speeds in lower oxygen atmospheres.",
+            "type": "OBSERVED",
+            "cites": [
+              "F:sibal-quench-speeds"
+            ],
+            "verified": true,
+            "issues": []
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Engineering acceptance checks, not a judge score or scientific accuracy evaluation. Source completeness and independent expert validation remain separate."
+}

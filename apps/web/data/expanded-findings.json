@@ -1,0 +1,133 @@
+[
+  {
+    "id": "same-smoke-size-mass",
+    "contextNotes": [
+      "This quotation is from the original SAME results on PDF page 2; SAME-R starts on PDF page 4.",
+      "AMD means arithmetic mean diameter, not median diameter. Almost half refers to particle mass, not particle count.",
+      "No run-level detector-performance dataset has been imported here; this does not mean the source or wider literature lacks detector results."
+    ],
+    "source_id": "same-results",
+    "in": "pdf",
+    "quote": "Consequently, although the AMD for silicone rubber is 227 nm, almost half the particle mass is larger than 1000 nm.",
+    "topics": [
+      "detection",
+      "smoke",
+      "particle-size"
+    ],
+    "kind": "observed",
+    "pdf_page": 2
+  },
+  {
+    "id": "slice-liftoff-objective",
+    "source_id": "slice-overview",
+    "in": "pdf",
+    "quote": "Identify the liftoff velocity limits as a function of the fuel and burner diameter.",
+    "topics": [
+      "airflow",
+      "geometry",
+      "stability"
+    ],
+    "kind": "context",
+    "pdf_page": 1
+  },
+  {
+    "id": "spice-soot-criterion",
+    "source_id": "spice-overview",
+    "in": "pdf",
+    "quote": "the influence of flow and fuel properties on the sooting propensity of flames.",
+    "topics": [
+      "soot",
+      "airflow",
+      "fuel"
+    ],
+    "kind": "context",
+    "pdf_page": 1
+  },
+  {
+    "id": "cfi-low-temperature-objective",
+    "source_id": "cfi-concept",
+    "in": "pdf",
+    "quote": "Enhance the diagnostic capability of the CIR and MDCA to better study cool flame behavior.",
+    "topics": [
+      "detection",
+      "cool-flame",
+      "diagnostics"
+    ],
+    "kind": "context",
+    "pdf_page": 3
+  },
+  {
+    "id": "cfig-spherical-cool-flame",
+    "source_id": "cfig-results",
+    "in": "pdf",
+    "quote": "Observed the first spherical, quasi-steady, burner-supported cool flames!",
+    "topics": [
+      "cool-flame",
+      "detection",
+      "chemistry"
+    ],
+    "kind": "observed",
+    "pdf_page": 6
+  },
+  {
+    "id": "efield-space-scope",
+    "source_id": "efield-overview",
+    "in": "abstract",
+    "quote": "The E-FIELD Flames research is not being conducted to serve any space applications",
+    "topics": [
+      "electric-field",
+      "scope"
+    ],
+    "kind": "context"
+  },
+  {
+    "id": "flex2-model-objective",
+    "source_id": "flex2-overview",
+    "in": "pdf",
+    "quote": "FLEX-2 data can help verify models of real fuels used in transportation and industry.",
+    "topics": [
+      "modeling",
+      "fuel-mixture",
+      "earth-applications"
+    ],
+    "kind": "context",
+    "pdf_page": 3
+  },
+  {
+    "id": "same-r-reported-test-count",
+    "source_id": "same-r-psi",
+    "in": "abstract",
+    "quote": "SAME-R flight tests were conducted from July 16, to September 9, 2010, successfully completing 66 test points.",
+    "topics": [
+      "detection",
+      "smoke",
+      "experimental-design"
+    ],
+    "kind": "observed"
+  },
+  {
+    "id": "fm2-lunar-objective",
+    "source_id": "fm2-overview",
+    "in": "abstract",
+    "quote": "Conduct the first-ever observations and measurements of flame spread on the Moon.",
+    "topics": [
+      "partial-gravity",
+      "materials-screening",
+      "modeling"
+    ],
+    "kind": "context"
+  },
+  {
+    "id": "watermist-proof-of-concept",
+    "source_id": "watermist-equipment",
+    "in": "abstract",
+    "quote": "The design implemented in the proof-of-concept experiment successfully extinguished both open fires and fires in baffled enclosures.",
+    "topics": [
+      "suppression",
+      "water-mist",
+      "equipment",
+      "earth-applications"
+    ],
+    "kind": "observed"
+  }
+]

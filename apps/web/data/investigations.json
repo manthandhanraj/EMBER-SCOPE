@@ -1,0 +1,1073 @@
+[
+  {
+    "id": "bass2",
+    "name": "BASS / BASS-II",
+    "phase": "solid",
+    "goals": [
+      "prevention",
+      "suppression"
+    ],
+    "objective": "Investigate solid-fuel ignition, spread and extinction under controlled low-speed flow.",
+    "fuels": "Plastic films, rods and composite fabric; exact materials and sizes are test-specific.",
+    "geometry": "Small solid samples in a flow duct; keep rods, films and fabrics distinct.",
+    "hardware": "BASS-II flow duct in the ISS Microgravity Science Glovebox; video camera with data overlay and a 35-mm still camera. Apparatus details are campaign-specific.",
+    "measurements": "For BASS-II, CSA-CP provided oxygen and carbon monoxide readings; a Carbon Dioxide Monitor measured carbon dioxide before and after tests. The report describes comparison with ISS Major Constituents Analyzer oxygen readings.",
+    "variables": [
+      "oxygen",
+      "airflow",
+      "material",
+      "geometry"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "bass2"
+    ],
+    "summary": "Solid-material research relevant to material screening, flame spread and extinction questions.",
+    "limitation": "Small samples and a specific duct do not establish whole-cabin behavior. Measurements and sensors are not interchangeable across tests.",
+    "interpretation": "Use this investigation to identify relevant solid-material experiments; assess scale, geometry and atmospheric mismatches before transferring findings.",
+    "source": "https://ntrs.nasa.gov/citations/20210011385",
+    "sourceLabel": "BASS-II Summary Report, apparatus and test matrices",
+    "sourceId": "bass2-summary",
+    "evidenceLevel": "Curated test records and publication findings",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "BASS and BASS-II are grouped for discovery. The sensor description above is specifically supported by the BASS-II report; it is not a universal specification for all BASS campaigns."
+    ],
+    "fieldReferences": {
+      "hardware": [
+        {
+          "url": "https://ntrs.nasa.gov/citations/20210011385",
+          "label": "BASS-II Summary Report",
+          "locator": "NTRS abstract: apparatus, sensors and tested variables"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://ntrs.nasa.gov/citations/20210011385",
+          "label": "BASS-II Summary Report",
+          "locator": "NTRS abstract: apparatus, sensors and tested variables"
+        }
+      ],
+      "variables": [
+        {
+          "url": "https://ntrs.nasa.gov/citations/20210011385",
+          "label": "BASS-II Summary Report",
+          "locator": "NTRS abstract: apparatus, sensors and tested variables"
+        }
+      ]
+    }
+  },
+  {
+    "id": "saffire",
+    "name": "Saffire",
+    "phase": "solid",
+    "goals": [
+      "prevention",
+      "detection",
+      "suppression"
+    ],
+    "objective": "Study larger spacecraft fires and their behavior in uncrewed cargo vehicles.",
+    "fuels": "Solid samples; material, sample size and configuration vary by flight and test.",
+    "geometry": "Larger samples than glovebox-scale tests; consult each run for dimensions and confinement.",
+    "hardware": "Saffire Flow Unit inside uncrewed Cygnus spacecraft; hardware and diagnostics vary by flight.",
+    "measurements": "Flame-spread and video observations. The Saffire VI publication discusses heat release, spacecraft temperature and carbon dioxide/carbon monoxide; IV-VI apparatus descriptions include inlet/outlet gas sensing. Check each flight before comparing sensors.",
+    "variables": [
+      "pressure",
+      "oxygen",
+      "material",
+      "scale"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "saffire"
+    ],
+    "summary": "A spacecraft-scale research context for flame spread and fire-safety questions.",
+    "limitation": "Scale, atmosphere and materials can change together. A result from one flight is not a controlled comparison with another by default.",
+    "interpretation": "Use spacecraft-scale evidence alongside small-sample studies, keeping differences visible rather than pooling their outcomes.",
+    "source": "https://www.nasa.gov/missions/station/iss-research/studying-combustion-and-fire-safety/",
+    "sourceLabel": "NASA overview, Saffire paragraph and linked publications",
+    "sourceId": null,
+    "evidenceLevel": "Curated test records and publication findings",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "The investigation group spans multiple flights. A sensor configuration or finding from IV-VI is not automatically a specification or outcome for I-III."
+    ],
+    "fieldReferences": {
+      "hardware": [
+        {
+          "url": "https://ntrs.nasa.gov/citations/20240002981",
+          "label": "Preliminary Results from Saffire VI",
+          "locator": "Abstract and apparatus description; IV-VI scope"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://ntrs.nasa.gov/citations/20240002981",
+          "label": "Preliminary Results from Saffire VI",
+          "locator": "Abstract and apparatus description; IV-VI scope"
+        }
+      ]
+    }
+  },
+  {
+    "id": "same",
+    "name": "SAME / SAME-R",
+    "phase": "smoke",
+    "goals": [
+      "detection"
+    ],
+    "objective": "Characterize spacecraft-material smoke and assess smoke-detector response in reduced gravity.",
+    "fuels": "Smoke generated from spacecraft materials; the overview lists Teflon, Kapton, cellulose and silicone rubber.",
+    "geometry": "Smoke-generation and aerosol-sampling experiment; not a solid flame-spread geometry.",
+    "hardware": "Smoke-generation, aerosol measurement and detector-test apparatus; configurations need the original investigation documentation.",
+    "measurements": "Aerosol number, size and mass-related measurements, plus ionization and photoelectric detector evaluation. NASA reports material-dependent smoke-size distributions; these aggregate results are not individual detector-performance records.",
+    "variables": [
+      "material",
+      "temperature",
+      "airflow",
+      "residence-time"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "same"
+    ],
+    "summary": "Detection-focused research that connects smoke properties to detector evaluation.",
+    "limitation": "No numerical SAME detector-performance time series are curated here. The NASA document includes aggregate smoke-property results; source-table smoke-generation conditions do not establish alarm sensitivity, false-alarm rate or timing for a chosen habitat.",
+    "interpretation": "Relevant to detector research and data collection; this overview cannot establish alarm performance for a selected habitat.",
+    "source": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+    "sourceLabel": "NASA SAME / SAME-R document, PDF pages 1–2 and reflight section",
+    "sourceId": null,
+    "evidenceLevel": "Published smoke-property findings, source metadata and smoke-generation conditions; no validated detector-performance model",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "The original NASA document includes results as well as objectives. Aggregate publication findings are kept separate from individual test rows and detector validation.",
+      "SAME-R has its own profile. Its modified hardware and materials are not assumed equivalent to the original SAME configuration.",
+      "PSI source-table metadata remains separate from curated solid-fuel outcome rows. Smoke generation settings do not become detector response or alarm-performance measurements."
+    ],
+    "fieldReferences": {
+      "objective": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+          "label": "NASA SAME / SAME-R investigation document",
+          "locator": "PDF pages 1–2: objectives, materials and measurement design"
+        }
+      ],
+      "fuels": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+          "label": "NASA SAME / SAME-R investigation document",
+          "locator": "PDF pages 1–2: objectives, materials and measurement design"
+        }
+      ],
+      "hardware": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+          "label": "NASA SAME / SAME-R investigation document",
+          "locator": "PDF pages 1–2: objectives, materials and measurement design"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+          "label": "NASA SAME / SAME-R investigation document",
+          "locator": "PDF page 2: published smoke-property results"
+        }
+      ],
+      "variables": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+          "label": "NASA SAME / SAME-R investigation document",
+          "locator": "PDF pages 1–2: objectives, materials and measurement design"
+        }
+      ]
+    }
+  },
+  {
+    "id": "flex",
+    "name": "FLEX / FLEX-2",
+    "phase": "liquid",
+    "goals": [
+      "suppression"
+    ],
+    "objective": "Examine droplet burning, extinction, suppressant effects and fuel-mixture behavior.",
+    "fuels": "Liquid-fuel droplets; mixtures and experimental conditions vary by investigation.",
+    "geometry": "Droplet combustion rather than solid sheets, fabrics or panels.",
+    "hardware": "Multi-User Droplet Combustion Apparatus (MDCA) inside the Combustion Integrated Rack in the ISS Destiny module.",
+    "measurements": "Droplet/flame observations and extinction-related measurements. The report documents hardware, diagnostic equipment, procedures and analysis; instrument specifications must be checked in the original report.",
+    "variables": [
+      "oxygen",
+      "fuel-mixture",
+      "suppressant"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "flex"
+    ],
+    "summary": "Liquid-droplet evidence for combustion and extinction mechanisms.",
+    "limitation": "Droplet behavior does not establish solid-material flammability. Visible-flame disappearance alone does not prove all combustion has ended.",
+    "interpretation": "Use as mechanistic evidence for suppression questions, clearly separated from a solid-material or cabin outcome.",
+    "source": "https://ntrs.nasa.gov/citations/20150023456",
+    "sourceLabel": "FLEX detailed-results report, NASA/TP-2015-216046",
+    "sourceId": "flex",
+    "evidenceLevel": "Publication-level mechanisms; no curated numerical test rows",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "The library group includes FLEX/FLEX-2, but the linked numerical publication findings here cite the FLEX report covering March 2009-December 2011. No FLEX or FLEX-2 individual test table has been imported into this corpus."
+    ]
+  },
+  {
+    "id": "acme",
+    "name": "ACME",
+    "phase": "gas",
+    "goals": [
+      "prevention"
+    ],
+    "objective": "Study gaseous-flame behavior to improve combustion efficiency and reduce pollutants; Burning Rate Emulator addresses materials flammability and spacecraft fire-prevention questions.",
+    "fuels": "Gaseous fuels in several distinct investigations.",
+    "geometry": "Gas-flame configurations vary across the ACME investigations.",
+    "hardware": "Combustion Integrated Rack with modular investigation hardware.",
+    "measurements": "Flame/soot and investigation-specific combustion measurements; one common sensor specification is not asserted.",
+    "variables": [
+      "fuel",
+      "flame-conditions",
+      "soot"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "acme"
+    ],
+    "summary": "Gas-flame mechanisms relevant to combustion research and some prevention questions.",
+    "limitation": "A gas-flame mechanism or electrical-field analogy is not a direct solid-material measurement at lunar or Martian gravity.",
+    "interpretation": "Keep gas-flame evidence in a mechanistic category when interpreting material-selection questions.",
+    "source": "https://science.nasa.gov/mission/acme/",
+    "sourceLabel": "NASA Science ACME mission: investigations and applications",
+    "sourceId": null,
+    "evidenceLevel": "Publication-level mechanisms; no curated numerical test rows",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "ACME contains distinct investigations with different objectives. Burning Rate Emulator is the spacecraft-fire-prevention component; the other investigations primarily address terrestrial combustion. Keep those application scopes separate."
+    ]
+  },
+  {
+    "id": "sofie",
+    "name": "SoFIE-GEL",
+    "phase": "solid",
+    "goals": [
+      "prevention",
+      "suppression"
+    ],
+    "objective": "Investigate solid-flame growth and extinction with controlled heating and atmosphere.",
+    "fuels": "PMMA sphere in the GEL investigation; this does not describe every SoFIE investigation.",
+    "geometry": "Thick spherical solid fuel; different from a flat fabric or panel.",
+    "hardware": "SoFIE investigation in the Combustion Integrated Rack.",
+    "measurements": "Growth/extinction characteristics, flame shape and dimensions; source describes comparison with a numerical model.",
+    "variables": [
+      "airflow",
+      "oxygen",
+      "pressure",
+      "heating"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "sofie"
+    ],
+    "summary": "A controlled solid-fuel study linking atmosphere, airflow and heating to growth/extinction research.",
+    "limitation": "The investigation overview is not a numerical results table. No SoFIE-GEL test rows are curated in this app.",
+    "interpretation": "Relevant to early growth/extinction research; do not infer a threshold for a different shape or habitat from the overview.",
+    "source": "https://science.nasa.gov/biological-physical/investigations/sofie-gel/",
+    "sourceLabel": "NASA Science, objectives and experiment description",
+    "sourceId": null,
+    "evidenceLevel": "Objectives/design overview and related publication context",
+    "checked": "2026-11-15",
+    "findingScope": "related-program",
+    "scopeNotes": [
+      "This profile describes SoFIE-GEL. The linked 2020 SoFIE project findings are broader parent-program context, not numerical results from GEL."
+    ]
+  },
+  {
+    "id": "luci",
+    "name": "LUCI",
+    "phase": "solid",
+    "goals": [
+      "prevention"
+    ],
+    "objective": "Investigate solid-material burning under simulated lunar gravity.",
+    "fuels": "SIBAL fabric and PMMA rod in the curated records.",
+    "geometry": "Different sample geometries on a spinning sounding-rocket platform.",
+    "hardware": "Spinning sounding rocket; centrifugal acceleration creates the gravity analogue.",
+    "measurements": "Reported flame-spread observations; limited duration and Coriolis effects remain relevant.",
+    "variables": [
+      "gravity",
+      "material",
+      "geometry"
+    ],
+    "gravity": "lunar-simulated",
+    "familyIds": [
+      "luci"
+    ],
+    "summary": "A limited partial-gravity analogue, kept distinct from orbital and Moon-surface measurements.",
+    "limitation": "Two curated burns are not a general lunar habitat dataset. These are simulated lunar-gravity results, not measurements on the Moon.",
+    "interpretation": "A closer gravity analogy can inform research questions while platform, duration and geometry mismatches remain explicit.",
+    "source": "https://ntrs.nasa.gov/citations/20250010653",
+    "sourceLabel": "LUCI publication; see the page-linked curated burn records",
+    "sourceId": "luci",
+    "evidenceLevel": "Two curated simulated-lunar test records",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "The two curated runs use simulated lunar acceleration in a rotating rocket. They are not Moon-surface measurements, and initial oxygen values do not describe the complete burn history."
+    ]
+  },
+  {
+    "id": "spice",
+    "name": "SPICE",
+    "phase": "gas",
+    "goals": [
+      "prevention"
+    ],
+    "objective": "Study how coflow and burner size change non-buoyant gas-jet smoke points and luminous flame length.",
+    "fuels": "Gaseous jet fuels; fuel-specific composition must be read from each source test.",
+    "geometry": "Laminar round-jet diffusion flame surrounded by an oxidizer coflow.",
+    "hardware": "SPICE coflow burner hardware in the ISS Microgravity Science Glovebox.",
+    "measurements": "Smoke-point onset, flame shape and length; source describes imaging and temperature-field studies.",
+    "variables": [
+      "fuel",
+      "burner-diameter",
+      "coflow-velocity",
+      "soot",
+      "flame-length"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "spice"
+    ],
+    "summary": "Gas-flame soot and radiation research that supports combustion-model questions.",
+    "limitation": "Smoke-point behavior is not a smoke-detector sensitivity test or a solid-material flammability limit. No individual SPICE rows are imported here.",
+    "interpretation": "Use soot/flow relationships to choose model inputs; validate separately for cabin materials and ventilation.",
+    "source": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf",
+    "sourceLabel": "NASA SPICE investigation description",
+    "sourceId": "spice-overview",
+    "evidenceLevel": "Source-linked investigation metadata and publication context; no imported individual test rows",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "NASA PSI catalog entry PSI-107 (DOI 10.60555/9kbh-e962) provides a separate data-access route. This profile does not imply that its complete files have been imported."
+    ],
+    "fieldReferences": {
+      "objective": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf",
+          "label": "NASA SPICE investigation description",
+          "locator": "Research Overview and Science Objectives"
+        }
+      ],
+      "fuels": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf",
+          "label": "NASA SPICE investigation description",
+          "locator": "Research Overview and Science Objectives"
+        }
+      ],
+      "geometry": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf",
+          "label": "NASA SPICE investigation description",
+          "locator": "Research Overview and Science Objectives"
+        }
+      ],
+      "hardware": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf",
+          "label": "NASA SPICE investigation description",
+          "locator": "Research Overview and Science Objectives"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf",
+          "label": "NASA SPICE investigation description",
+          "locator": "Research Overview and Science Objectives"
+        }
+      ],
+      "variables": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf",
+          "label": "NASA SPICE investigation description",
+          "locator": "Research Overview and Science Objectives"
+        }
+      ],
+      "gravity": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf",
+          "label": "NASA SPICE investigation description",
+          "locator": "Research Overview and Science Objectives"
+        }
+      ],
+      "limitation": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf",
+          "label": "NASA SPICE investigation description",
+          "locator": "Research Overview and Science Objectives"
+        }
+      ]
+    }
+  },
+  {
+    "id": "slice",
+    "name": "SLICE",
+    "phase": "gas",
+    "goals": [
+      "prevention"
+    ],
+    "objective": "Study flame-base structure and liftoff limits to test non-premixed combustion models.",
+    "fuels": "Methane, ethylene and selected nitrogen-diluted mixtures burning in a coflow of air.",
+    "geometry": "Attached and lifted coflow diffusion flames; burner diameter is a studied variable.",
+    "hardware": "SPICE-derived burner hardware in the ISS Microgravity Science Glovebox; procedures differ from SPICE.",
+    "measurements": "Still/video observations of flame structure and base position during changes in airflow.",
+    "variables": [
+      "fuel",
+      "nitrogen-dilution",
+      "burner-diameter",
+      "fuel-flow",
+      "airflow",
+      "liftoff"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "slice"
+    ],
+    "summary": "Flame stabilization research linking imaging and detailed numerical combustion models.",
+    "limitation": "The source describes objectives and proposed methods. Liftoff of a gas flame is not a measured solid-fuel extinction threshold.",
+    "interpretation": "Use as mechanistic context for ventilation/flame-stability questions, with configuration differences visible.",
+    "source": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+    "sourceLabel": "NASA SLICE investigation description",
+    "sourceId": "slice-overview",
+    "evidenceLevel": "Source-linked investigation metadata and publication context; no imported individual test rows",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "SLICE is a precursor to ACME CLD Flame, not an interchangeable campaign. Shared hardware does not imply equivalent tests."
+    ],
+    "fieldReferences": {
+      "objective": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+          "label": "NASA SLICE investigation description",
+          "locator": "PDF pages 1–2: Objectives and Approach"
+        }
+      ],
+      "fuels": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+          "label": "NASA SLICE investigation description",
+          "locator": "PDF pages 1–2: Objectives and Approach"
+        }
+      ],
+      "geometry": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+          "label": "NASA SLICE investigation description",
+          "locator": "PDF pages 1–2: Objectives and Approach"
+        }
+      ],
+      "hardware": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+          "label": "NASA SLICE investigation description",
+          "locator": "PDF pages 1–2: Objectives and Approach"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+          "label": "NASA SLICE investigation description",
+          "locator": "PDF pages 1–2: Objectives and Approach"
+        }
+      ],
+      "variables": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+          "label": "NASA SLICE investigation description",
+          "locator": "PDF pages 1–2: Objectives and Approach"
+        }
+      ],
+      "gravity": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+          "label": "NASA SLICE investigation description",
+          "locator": "PDF pages 1–2: Objectives and Approach"
+        }
+      ],
+      "limitation": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+          "label": "NASA SLICE investigation description",
+          "locator": "PDF pages 1–2: Objectives and Approach"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cfi",
+    "name": "CFI — Cool Flame Investigation",
+    "phase": "liquid",
+    "goals": [
+      "prevention",
+      "suppression"
+    ],
+    "objective": "Study n-dodecane droplet combustion, helium dilution, soot formation and relationships among size, pressure and extinction.",
+    "fuels": "n-dodecane, n-dodecane/iso-dodecane mixtures and farnesane described in PSI metadata.",
+    "geometry": "Needle-deployed or silicon-carbide-fiber-supported liquid droplets.",
+    "hardware": "Multi-User Droplet Combustion Apparatus within the ISS Combustion Integrated Rack.",
+    "measurements": "Black-and-white droplet imaging, UV OH* / flame-size imaging, and narrow-/wide-band radiometry.",
+    "variables": [
+      "fuel-composition",
+      "oxygen",
+      "pressure",
+      "diluent",
+      "droplet-size",
+      "radiation"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "cfi"
+    ],
+    "summary": "Liquid-droplet cool-flame research, distinct from original FLEX and gaseous CFI-G.",
+    "limitation": "PSI objectives and approach give inconsistent pressure-range descriptions. No reconciled flight envelope or individual CFI outcome table is asserted here.",
+    "interpretation": "Plan diagnostics that can distinguish hot-flame disappearance from continuing low-temperature chemistry.",
+    "source": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+    "sourceLabel": "NASA PSI-39 CFI, DOI 10.60555/m6pj-a914",
+    "sourceId": null,
+    "evidenceLevel": "Source-linked investigation metadata and publication context; no imported individual test rows",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "PSI-39 objective and approach pressure ranges differ; consult original test tables before selecting an experimental envelope.",
+      "The supplementary 2014 concept-review excerpt is historical design context. Its illustrated FLEX tests are not relabelled as CFI flight results."
+    ],
+    "fieldReferences": {
+      "objective": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "label": "NASA PSI-39 CFI, DOI 10.60555/m6pj-a914",
+          "locator": "Versioned PSI metadata: Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "fuels": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "label": "NASA PSI-39 CFI, DOI 10.60555/m6pj-a914",
+          "locator": "Versioned PSI metadata: Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "geometry": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "label": "NASA PSI-39 CFI, DOI 10.60555/m6pj-a914",
+          "locator": "Versioned PSI metadata: Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "hardware": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "label": "NASA PSI-39 CFI, DOI 10.60555/m6pj-a914",
+          "locator": "Versioned PSI metadata: Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "label": "NASA PSI-39 CFI, DOI 10.60555/m6pj-a914",
+          "locator": "Versioned PSI metadata: Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "variables": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "label": "NASA PSI-39 CFI, DOI 10.60555/m6pj-a914",
+          "locator": "Versioned PSI metadata: Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "gravity": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "label": "NASA PSI-39 CFI, DOI 10.60555/m6pj-a914",
+          "locator": "Versioned PSI metadata: Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "limitation": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "label": "NASA PSI-39 CFI, DOI 10.60555/m6pj-a914",
+          "locator": "Versioned PSI metadata: Objectives, Approach and Experiment Hardware"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cfi-g",
+    "name": "CFI-G — Cool Flames Investigation with Gases",
+    "phase": "gas",
+    "goals": [
+      "prevention",
+      "suppression"
+    ],
+    "objective": "Observe quasi-steady spherical cool diffusion flames on porous burners to study low-temperature chemistry.",
+    "fuels": "Propane, n-butane and n-pentane with varied reactant dilutions in the PSI objectives; normal and inverse flame configurations.",
+    "geometry": "Normal and inverse spherical diffusion flames on a porous burner.",
+    "hardware": "ACME hardware in the ISS Combustion Integrated Rack, with intensified imaging and thermal measurements.",
+    "measurements": "Cameras, radiometers, photomultiplier tubes and thermocouples in PSI metadata; the NTRS presentation reports a cool-flame observation.",
+    "variables": [
+      "fuel",
+      "oxidizer-composition",
+      "pressure",
+      "radiation",
+      "burner-condition"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "cfi-g"
+    ],
+    "summary": "Gas-fueled cool-flame observations and chemistry-model research for cleaner combustion.",
+    "limitation": "Reported observations do not supply a complete numerical test table, suppression recipe or solid-material fire limit.",
+    "interpretation": "Treat faint emissions and continuing chemistry as a diagnostics/modeling question; do not equate visual darkness with a safe condition.",
+    "source": "https://ntrs.nasa.gov/citations/20220007191",
+    "sourceLabel": "NASA ACME presentation, CFI-G selected finding",
+    "sourceId": "cfig-results",
+    "evidenceLevel": "Source-linked investigation metadata and publication context; no imported individual test rows",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "CFI-G burns gaseous fuels on a porous burner; CFI studies liquid droplets. Neither is a controlled comparison with a habitat fire."
+    ],
+    "fieldReferences": {
+      "objective": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "label": "NASA PSI-159 CFI-G, DOI 10.60555/cyt1-kh64",
+          "locator": "Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "fuels": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "label": "NASA PSI-159 CFI-G, DOI 10.60555/cyt1-kh64",
+          "locator": "Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "geometry": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "label": "NASA PSI-159 CFI-G, DOI 10.60555/cyt1-kh64",
+          "locator": "Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "hardware": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "label": "NASA PSI-159 CFI-G, DOI 10.60555/cyt1-kh64",
+          "locator": "Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "label": "NASA PSI-159 CFI-G, DOI 10.60555/cyt1-kh64",
+          "locator": "Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "variables": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "label": "NASA PSI-159 CFI-G, DOI 10.60555/cyt1-kh64",
+          "locator": "Objectives, Approach and Experiment Hardware"
+        }
+      ],
+      "gravity": [
+        {
+          "url": "https://ntrs.nasa.gov/citations/20220007191",
+          "label": "NASA ACME presentation, CFI-G selected finding",
+          "locator": "PDF slide 6: CFI-G objective, observation and imaging"
+        }
+      ],
+      "limitation": [
+        {
+          "url": "https://ntrs.nasa.gov/citations/20220007191",
+          "label": "NASA ACME presentation, CFI-G selected finding",
+          "locator": "PDF slide 6: CFI-G objective, observation and imaging"
+        }
+      ]
+    }
+  },
+  {
+    "id": "efield",
+    "name": "E-FIELD Flames",
+    "phase": "gas",
+    "goals": [
+      "prevention"
+    ],
+    "objective": "Understand flame ion production and electric-field control of non-premixed gas flames.",
+    "fuels": "Gas-fueled flames, with or without coflow; source-specific fuel compositions remain test-level information.",
+    "geometry": "Jet or coflow diffusion flame between a burner and downstream mesh electrode.",
+    "hardware": "ACME Combustion Integrated Rack with burner, mesh electrode and high-voltage field.",
+    "measurements": "Electric field, ion current and flame response, including structure, soot, temperature and stability.",
+    "variables": [
+      "electric-field",
+      "fuel",
+      "ion-current",
+      "coflow",
+      "soot",
+      "stability"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "efield"
+    ],
+    "summary": "Electrical flame-control research aimed primarily at terrestrial combustion efficiency and emissions.",
+    "limitation": "NASA states this research is not conducted for a space application. It is not demonstrated spacecraft fire-suppression equipment.",
+    "interpretation": "Identify mechanisms and diagnostic signals for research; hardware safety and effectiveness require independent engineering tests.",
+    "source": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+    "sourceLabel": "NASA Science E-FIELD Flames investigation",
+    "sourceId": "efield-overview",
+    "evidenceLevel": "Source-linked investigation metadata and publication context; no imported individual test rows",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "The prevention tag describes fundamental combustion-control relevance, not a validated crew fire-control procedure."
+    ],
+    "fieldReferences": {
+      "objective": [
+        {
+          "url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+          "label": "NASA Science E-FIELD Flames investigation",
+          "locator": "Science Objectives, Experiment Description, Space Applications and Earth Applications"
+        }
+      ],
+      "fuels": [
+        {
+          "url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+          "label": "NASA Science E-FIELD Flames investigation",
+          "locator": "Science Objectives, Experiment Description, Space Applications and Earth Applications"
+        }
+      ],
+      "geometry": [
+        {
+          "url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+          "label": "NASA Science E-FIELD Flames investigation",
+          "locator": "Science Objectives, Experiment Description, Space Applications and Earth Applications"
+        }
+      ],
+      "hardware": [
+        {
+          "url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+          "label": "NASA Science E-FIELD Flames investigation",
+          "locator": "Science Objectives, Experiment Description, Space Applications and Earth Applications"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+          "label": "NASA Science E-FIELD Flames investigation",
+          "locator": "Science Objectives, Experiment Description, Space Applications and Earth Applications"
+        }
+      ],
+      "variables": [
+        {
+          "url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+          "label": "NASA Science E-FIELD Flames investigation",
+          "locator": "Science Objectives, Experiment Description, Space Applications and Earth Applications"
+        }
+      ],
+      "gravity": [
+        {
+          "url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+          "label": "NASA Science E-FIELD Flames investigation",
+          "locator": "Science Objectives, Experiment Description, Space Applications and Earth Applications"
+        }
+      ],
+      "limitation": [
+        {
+          "url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+          "label": "NASA Science E-FIELD Flames investigation",
+          "locator": "Science Objectives, Experiment Description, Space Applications and Earth Applications"
+        }
+      ]
+    }
+  },
+  {
+    "id": "flex2",
+    "name": "FLEX-2",
+    "phase": "liquid",
+    "goals": [
+      "prevention",
+      "suppression"
+    ],
+    "objective": "Study liquid-droplet fuel mixtures, sub-buoyant flows and droplet interactions to improve combustion models.",
+    "fuels": "Pure, bi-component and surrogate liquid fuels; fuel composition is campaign/test-specific.",
+    "geometry": "Single droplets or binary arrays, including fiber-supported droplets and controlled relative flow.",
+    "hardware": "Combustion Integrated Rack and Multi-User Droplet Combustion Apparatus; source-specific fiber, deployment and ignition configurations.",
+    "measurements": "Recorded droplet burning and extinction behavior, including flow and droplet-interaction cases.",
+    "variables": [
+      "fuel-mixture",
+      "ambient-composition",
+      "droplet-spacing",
+      "droplet-size",
+      "convective-flow"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "flex2"
+    ],
+    "summary": "A distinct droplet-modeling investigation with mixtures and interactions beyond the original FLEX focus.",
+    "limitation": "The combined FLEX overview remains for discovery. Original FLEX report findings are not assigned to FLEX-2 by default; source-table parameters are not automatically burn-outcome labels.",
+    "interpretation": "Compare mixture and geometry explicitly before using this mechanistic work to guide a fire-safety research question.",
+    "source": "https://www.nasa.gov/wp-content/uploads/2025/07/flame-extinguishment-experiment-flex.pdf?emrc=f75994",
+    "sourceLabel": "NASA FLEX / FLEX-2 investigation document",
+    "sourceId": "flex2-overview",
+    "evidenceLevel": "Source-linked investigation metadata and publication context; no imported individual test rows",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "Separate FLEX-2 profile prevents its objectives being confused with findings from the original FLEX report. No original FLEX rows or findings are duplicated here.",
+      "PSI source-table parameters are separately available for review; no original FLEX measured outcome is duplicated into this profile."
+    ],
+    "fieldReferences": {
+      "objective": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/flame-extinguishment-experiment-flex.pdf?emrc=f75994",
+          "label": "NASA FLEX / FLEX-2 investigation document",
+          "locator": "PDF pages 3–4: FLEX-2 objectives and configurations"
+        }
+      ],
+      "fuels": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/flame-extinguishment-experiment-flex.pdf?emrc=f75994",
+          "label": "NASA FLEX / FLEX-2 investigation document",
+          "locator": "PDF pages 3–4: FLEX-2 objectives and configurations"
+        }
+      ],
+      "geometry": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/flame-extinguishment-experiment-flex.pdf?emrc=f75994",
+          "label": "NASA FLEX / FLEX-2 investigation document",
+          "locator": "PDF pages 3–4: FLEX-2 objectives and configurations"
+        }
+      ],
+      "hardware": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+          "label": "NASA PSI-68 FLEX-2",
+          "locator": "Experiment Hardware and Approach"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/flame-extinguishment-experiment-flex.pdf?emrc=f75994",
+          "label": "NASA FLEX / FLEX-2 investigation document",
+          "locator": "PDF pages 3–4: FLEX-2 objectives and configurations"
+        }
+      ],
+      "variables": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/flame-extinguishment-experiment-flex.pdf?emrc=f75994",
+          "label": "NASA FLEX / FLEX-2 investigation document",
+          "locator": "PDF pages 3–4: FLEX-2 objectives and configurations"
+        }
+      ],
+      "gravity": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/flame-extinguishment-experiment-flex.pdf?emrc=f75994",
+          "label": "NASA FLEX / FLEX-2 investigation document",
+          "locator": "PDF pages 3–4: FLEX-2 objectives and configurations"
+        }
+      ],
+      "limitation": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/flame-extinguishment-experiment-flex.pdf?emrc=f75994",
+          "label": "NASA FLEX / FLEX-2 investigation document",
+          "locator": "PDF pages 3–4: FLEX-2 objectives and configurations"
+        }
+      ]
+    }
+  },
+  {
+    "id": "same-r",
+    "name": "SAME-R",
+    "phase": "smoke",
+    "goals": [
+      "detection"
+    ],
+    "objective": "Quantify low-gravity smoke-particle sizes and relate distributions to smoke generation and transport.",
+    "fuels": "Spacecraft smoke-source materials; SAME-R introduced Pyrell foam and changed conditions relative to SAME.",
+    "geometry": "Smoke generation, transport, aging and aerosol sampling; not flame-spread geometry.",
+    "hardware": "Modified SAME hardware, thermal precipitators and M-pass diagnostics in the ISS Microgravity Science Glovebox.",
+    "measurements": "Particle-size-distribution moments, microscopy and comparison with ground reference measurements.",
+    "variables": [
+      "material",
+      "heating-temperature",
+      "airflow",
+      "residence-time",
+      "particle-morphology"
+    ],
+    "gravity": "microgravity",
+    "familyIds": [
+      "same-r"
+    ],
+    "summary": "A distinct smoke-measurement reflight with modified materials, conditions and diagnostics.",
+    "limitation": "The PSI catalog total and smoke-generation condition table do not establish detector alarm performance. Imported source metadata must retain row type, original units and missing cells.",
+    "interpretation": "Use source-specific aerosol distributions and calibration to formulate detector validation rather than infer performance from flame outcomes.",
+    "source": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+    "sourceLabel": "NASA PSI-101 SAME-R, DOI 10.60555/2np7-jv14",
+    "sourceId": "same-r-psi",
+    "evidenceLevel": "PSI metadata and aggregate reported test count; detector-performance validation remains separate",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "SAME-R is related to SAME but includes hardware and protocol changes. The reported total number of test points is an aggregate catalog statement, not that many imported rows."
+    ],
+    "fieldReferences": {
+      "objective": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "label": "NASA PSI-101 SAME-R, DOI 10.60555/2np7-jv14",
+          "locator": "Objectives and Approach; DOI and versioned investigation metadata"
+        }
+      ],
+      "fuels": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "label": "NASA PSI-101 SAME-R, DOI 10.60555/2np7-jv14",
+          "locator": "Objectives and Approach; DOI and versioned investigation metadata"
+        }
+      ],
+      "geometry": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "label": "NASA PSI-101 SAME-R, DOI 10.60555/2np7-jv14",
+          "locator": "Objectives and Approach; DOI and versioned investigation metadata"
+        }
+      ],
+      "hardware": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "label": "NASA PSI-101 SAME-R, DOI 10.60555/2np7-jv14",
+          "locator": "Objectives and Approach; DOI and versioned investigation metadata"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "label": "NASA PSI-101 SAME-R, DOI 10.60555/2np7-jv14",
+          "locator": "Objectives and Approach; DOI and versioned investigation metadata"
+        }
+      ],
+      "variables": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "label": "NASA PSI-101 SAME-R, DOI 10.60555/2np7-jv14",
+          "locator": "Objectives and Approach; DOI and versioned investigation metadata"
+        }
+      ],
+      "gravity": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "label": "NASA PSI-101 SAME-R, DOI 10.60555/2np7-jv14",
+          "locator": "Objectives and Approach; DOI and versioned investigation metadata"
+        }
+      ],
+      "limitation": [
+        {
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "label": "NASA PSI-101 SAME-R, DOI 10.60555/2np7-jv14",
+          "locator": "Objectives and Approach; DOI and versioned investigation metadata"
+        }
+      ]
+    }
+  },
+  {
+    "id": "fm2",
+    "name": "FM² — Flammability of Materials on the Moon",
+    "phase": "solid",
+    "goals": [
+      "prevention"
+    ],
+    "objective": "Plan lunar-surface observations of solid flame spread and compare material-screening behavior across gravity.",
+    "fuels": "Four solid samples in the NASA hardware description; exact flight material selection requires its latest configuration record.",
+    "geometry": "Individual samples burned in a sealed, autonomously controlled chamber.",
+    "hardware": "Self-contained FM² lunar experiment chamber, gas supply, cameras and onboard sensors.",
+    "measurements": "Planned flame size, intensity, color and spread-rate imaging; fuel/flame temperature, oxygen and carbon dioxide sensing.",
+    "variables": [
+      "gravity",
+      "material",
+      "oxygen",
+      "pressure",
+      "spread-direction"
+    ],
+    "gravity": "lunar",
+    "familyIds": [
+      "fm2"
+    ],
+    "summary": "A lunar-surface research design that addresses a gap beyond simulated partial gravity.",
+    "limitation": "The cited objectives and hardware description do not establish completed lunar measurements. No Moon-surface result rows are imported here.",
+    "interpretation": "Keep planned lunar evidence separate from LUCI simulated-lunar results and from Earth/ISS comparisons.",
+    "source": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+    "sourceLabel": "NASA FM² objectives and hardware overview",
+    "sourceId": "fm2-overview",
+    "findingScope": "related-program",
+    "evidenceLevel": "Source-linked investigation metadata and publication context; no imported individual test rows",
+    "checked": "2026-11-15",
+    "scopeNotes": [
+      "This is a research-plan/hardware profile, not a current launch-status assertion or a completed lunar dataset. Historical schedule statements require a dated mission-status source."
+    ],
+    "fieldReferences": {
+      "objective": [
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "label": "NASA FM² objectives and hardware overview",
+          "locator": "Objectives and Approach and Hardware"
+        }
+      ],
+      "fuels": [
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "label": "NASA FM² objectives and hardware overview",
+          "locator": "Objectives and Approach and Hardware"
+        }
+      ],
+      "geometry": [
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "label": "NASA FM² objectives and hardware overview",
+          "locator": "Objectives and Approach and Hardware"
+        }
+      ],
+      "hardware": [
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "label": "NASA FM² objectives and hardware overview",
+          "locator": "Objectives and Approach and Hardware"
+        }
+      ],
+      "measurements": [
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "label": "NASA FM² objectives and hardware overview",
+          "locator": "Objectives and Approach and Hardware"
+        }
+      ],
+      "variables": [
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "label": "NASA FM² objectives and hardware overview",
+          "locator": "Objectives and Approach and Hardware"
+        }
+      ],
+      "gravity": [
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "label": "NASA FM² objectives and hardware overview",
+          "locator": "Objectives and Approach and Hardware"
+        }
+      ],
+      "limitation": [
+        {
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+          "label": "NASA FM² objectives and hardware overview",
+          "locator": "Objectives and Approach and Hardware"
+        }
+      ]
+    }
+  }
+]
