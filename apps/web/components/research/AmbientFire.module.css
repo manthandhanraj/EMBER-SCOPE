@@ -1,0 +1,32 @@
+.backdrop{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;user-select:none;contain:strict;opacity:.8}
+.haze{position:absolute;inset:0;background:radial-gradient(ellipse at 0 65%,#a9361e32,transparent 52%),radial-gradient(ellipse at 100% 85%,#e46c2638,transparent 50%),radial-gradient(ellipse at 48% 110%,#e9842833,transparent 62%);animation:heatGlow 12s ease-in-out infinite alternate}
+.flames{position:absolute;left:-5%;bottom:-8%;width:110%;height:85%;filter:blur(9px);mask-image:linear-gradient(90deg,#000,#0006 35%,#0006 65%,#000)}
+.flames path{transform-box:fill-box;transform-origin:50% 100%;animation:fireSway 7s ease-in-out infinite alternate}
+.flames path:nth-child(2){animation-duration:9s;animation-delay:-4s}
+.flames path:nth-child(3){animation-duration:6s;animation-delay:-2s;opacity:.65}
+.flames path:nth-child(4){animation-duration:10s;animation-delay:-7s;opacity:.75}
+.flames path:nth-child(5){animation-duration:8s;animation-delay:-3s}
+.flames path:nth-child(6){animation-duration:11s;animation-delay:-5s}
+.embers{position:absolute;inset:0}
+.embers i{position:absolute;bottom:-14px;left:4%;width:3px;height:5px;border-radius:60% 40% 65% 35%;background:#ffc77c;box-shadow:0 0 10px #ff762c;opacity:0;animation:risingEmber 13s linear infinite}
+.embers i:nth-child(2){left:11%;animation-delay:-8s;animation-duration:17s}
+.embers i:nth-child(3){left:18%;animation-delay:-3s;animation-duration:14s;width:2px;height:3px}
+.embers i:nth-child(4){left:25%;animation-delay:-11s;animation-duration:19s}
+.embers i:nth-child(5){left:33%;animation-delay:-6s;animation-duration:16s;width:2px;height:3px}
+.embers i:nth-child(6){left:41%;animation-delay:-13s;animation-duration:20s}
+.embers i:nth-child(7){left:48%;animation-delay:-5s;animation-duration:15s}
+.embers i:nth-child(8){left:55%;animation-delay:-10s;animation-duration:18s;width:2px;height:3px}
+.embers i:nth-child(9){left:63%;animation-delay:-2s;animation-duration:14s}
+.embers i:nth-child(10){left:70%;animation-delay:-12s;animation-duration:21s}
+.embers i:nth-child(11){left:77%;animation-delay:-6s;animation-duration:17s;width:2px;height:3px}
+.embers i:nth-child(12){left:84%;animation-delay:-9s;animation-duration:15s}
+.embers i:nth-child(13){left:91%;animation-delay:-4s;animation-duration:19s}
+.embers i:nth-child(14){left:97%;animation-delay:-14s;animation-duration:22s;width:2px;height:3px}
+@keyframes heatGlow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.06)}}
+@keyframes fireSway{0%{transform:skewX(-6deg) scale(.96,.86);opacity:.65}45%{transform:skewX(3deg) scale(1.04,1.03);opacity:1}100%{transform:skewX(-2deg) scale(.98,.95);opacity:.8}}
+@keyframes risingEmber{0%{transform:translate3d(0,0,0) rotate(0);opacity:0}10%{opacity:.7}70%{opacity:.35}100%{transform:translate3d(42px,-105vh,0) rotate(160deg);opacity:0}}
+:global(html[data-theme=light]) .backdrop{opacity:.24}
+:global(html[data-motion=gentle]) .haze,:global(html[data-motion=gentle]) .flames path,:global(html[data-motion=gentle]) .embers i{animation-play-state:paused}
+@media(max-width:760px){.backdrop{opacity:.6}.flames{height:75%;filter:blur(6px)}.embers i:nth-child(even){display:none}:global(html[data-theme=light]) .backdrop{opacity:.18}}
+@media(prefers-reduced-motion:reduce){.haze,.flames path{animation:none}.embers{display:none}}
+@media print{.backdrop{display:none}}

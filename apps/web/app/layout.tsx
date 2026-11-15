@@ -3,6 +3,7 @@ import Link from "next/link";
 import { connection } from "next/server";
 import {cookies} from "next/headers";
 import { ResearchNavigation } from "@/components/research/ResearchNavigation";
+import { AmbientFire } from "@/components/research/AmbientFire";
 import { ResearchProvider } from "@/components/guide/EmberGuide";
 import "./globals.css";
 import "./explorer-ui.css";
@@ -24,6 +25,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="antialiased" data-scroll-behavior="smooth" data-theme={theme}>
       <body className="min-h-screen flex flex-col" data-design="clear">
+        <AmbientFire/>
         <ResearchProvider>
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-panel px-3 py-2">
           Skip to content

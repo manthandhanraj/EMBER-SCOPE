@@ -1,5 +1,17 @@
 # Ignition Studio + Evidence Constellation
 
+## Frameless artwork and shared fire background — 15 November 2026
+
+The current hero uses `apps/web/public/design/ignition-chamber-cutout.png`, a 1536×1024 RGBA version with actual transparent pixels outside the chamber. The original artwork is retained. The transparent version was created with the built-in image tool in background-extraction mode, then copied into the project. It remains a decorative concept illustration. Both the base image and independently masked flame animation use the same cutout so their coordinates agree.
+
+The outer card border, surface and shadow were removed. The shared `AmbientFire` component in the root layout provides animated SVG flame ribbons, a warm glow and drifting embers across all pages. It is hidden from accessibility tools, sits behind the content and cannot intercept clicks. Light mode reduces its intensity; mobile uses fewer embers. The existing motion control pauses it, system reduced-motion preferences stop its animation, and print hides it.
+
+### Transparent artwork edit prompt
+
+Use case: background-extraction. Edit target: the referenced EmberScope chamber illustration. Remove ONLY the black studio backdrop and the floor/shadow/reflection outside the physical combustion chamber, output actual alpha transparency. Keep the entire metal chamber, every pipe, foot, bolt, glass window, the enclosed orange flame and its blue base intact. Keep its exact original position, scale, proportions, perspective and lighting in the same wide 1536x1024 canvas: chamber remains on the right, left remains empty transparent space. Do not crop, center, redraw or redesign the chamber or flame. Retain the dark interior behind the glass; transparency is only OUTSIDE the physical object, including empty gaps between pipes and legs. No text or new elements. Clean crisp antialiased silhouette, no black rectangular halo. This is a decorative web illustration, not measured scientific data.
+
+## Original design
+
 Selected direction: option 2's charcoal/copper/orange chamber aesthetic combined with option 4's purple/cyan evidence map. Implemented in the active app, not as a static screenshot background.
 
 The hero artwork is saved at `apps/web/public/design/ignition-chamber.png`. It was generated with the built-in image-generation tool on 14 November 2026. It is an illustrative apparatus, not a NASA photograph or measured flame simulation. Labels in the five earlier design previews were placeholders; the implemented map uses the curated investigation names, exact publication excerpts and original sources.
